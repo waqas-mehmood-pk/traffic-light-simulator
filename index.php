@@ -4,8 +4,8 @@ include "TrafficLight/TrafficLight.php";
 
 $trafficLight = new TrafficLight();
 while ( true ) {
-	$trafficLight->processor();
 	echo $trafficLight->stateInfo();
+	$trafficLight->processor();
 	sleep( 1 );
 }
 

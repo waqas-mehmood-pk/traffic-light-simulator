@@ -6,7 +6,7 @@ class TrafficLight {
 	
 	protected $state;
 	protected $isTimeSlabChanged = false;
-	protected $currentTimeSlab   = '';
+	protected $currentTimeSlab   = 'day';
 	
 	public function __construct () {
 		$this->state = new GreenLightState( $this );

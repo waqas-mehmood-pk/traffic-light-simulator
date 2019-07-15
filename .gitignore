@@ -1,2 +1,4 @@
 .idea
 /bash.exe.stackdump
+/composer.lock
+/.idea/vcs.xml
