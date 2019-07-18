@@ -34,6 +34,6 @@ class RedLightState implements TrafficLightInterface {
 	}
 	
 	public function stateInfo () {
-		return "Red Light";// . date( "i:s" ) . " $this->timer\n";
+		return "Red Light";
 	}
 }

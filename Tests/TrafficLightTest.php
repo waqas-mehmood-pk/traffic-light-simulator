@@ -12,10 +12,6 @@ class TrafficLightTest extends \PHPUnit_Framework_TestCase {
 	
 	public function setUp(){
 		date_default_timezone_set( $this->timeZone );
-		//$trafficLight = $this->getMock(TrafficLight::class)
-		//->disableOriginalConstructor()
-		//										->getMock();
-		
 		$this->state = new GreenLightState( new TrafficLight());
 	}
 	

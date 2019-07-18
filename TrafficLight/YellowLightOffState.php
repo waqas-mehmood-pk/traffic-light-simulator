@@ -34,6 +34,6 @@ class YellowLightOffState implements TrafficLightInterface {
 	}
 	
 	public function stateInfo () {
-		return "Yellow Light Off";// . date( "i:s" ) . " $this->timer\n";
+		return "Yellow Light Off";
 	}
 }
