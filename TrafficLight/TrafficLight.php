@@ -21,7 +21,7 @@ class TrafficLight {
 		return $this->state->stateInfo();
 	}
 	
-	public function updateTimeSlabChanged () {
+	private function updateIsTimeSlabChanged () {
 		$dayTimeStart   = "06:00";
 		$nightTimeStart = "23:00";
 		if ( date( 'H:i' ) >= date( 'H:i', strtotime( $dayTimeStart ) ) &&
@@ -36,8 +36,12 @@ class TrafficLight {
 		$this->state = $state;
 	}
 	
+	public function getState ( ) {
+		return $this->state;
+	}
+	
 	public function getIsTimeSlabChanged () {
-		$this->updateTimeSlabChanged();
+		$this->updateIsTimeSlabChanged();
 		return $this->isTimeSlabChanged;
 	}
 	

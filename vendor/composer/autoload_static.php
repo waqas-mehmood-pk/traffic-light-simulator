@@ -20,6 +20,10 @@ class ComposerStaticInit6d32e638d78257228d3fdd26b80f69f9
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'T' => 
+        array (
+            'TrafficLight\\' => 13,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
@@ -45,6 +49,10 @@ class ComposerStaticInit6d32e638d78257228d3fdd26b80f69f9
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'TrafficLight\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/TrafficLight',
         ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (

@@ -6,8 +6,8 @@ include_once "GreenLightState.php";
 
 class YellowLightOnState implements TrafficLightInterface {
 	
-	protected $timeShouldBeOn  = 1;
-	protected $timer           = 1;
+	public $timeShouldBeOn  = 1;
+	public $timer           = 1;
 	protected $state;
 	
 	public function __construct ( TrafficLight $context ) {
@@ -33,6 +33,6 @@ class YellowLightOnState implements TrafficLightInterface {
 	}
 	
 	public function stateInfo () {
-		return "Yellow Light On " . date( "i:s" ) . " $this->timer\n";
+		return "Yellow Light On";// . date( "i:s" ) . " $this->timer\n";
 	}
 }
